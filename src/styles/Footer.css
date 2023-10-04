@@ -1,0 +1,37 @@
+.footer-container{
+    width: 100vw;
+    height: 350px;
+    background-color: #f3f3f3;
+    display: flex;
+    padding: 50px 70px;
+}
+
+.footer-download-icons{
+    display: flex;
+    padding: 10px;
+    align-items: center;
+}
+
+.footer-playstore-img, .footer-appstore-img{
+    width: 220px;
+    cursor: pointer;
+}
+
+.footer-social{
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.footer-contact-address{
+    width: 170px;
+    font-size: 12px;
+}
+
+@media screen and (max-width: 650px) {
+    .footer-container-2{
+        display: none;
+    }
+    .footer-container-3{
+        display: none;
+    }
+}

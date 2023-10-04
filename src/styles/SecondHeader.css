@@ -1,0 +1,86 @@
+.sub-header{
+    width: 100vw;
+    border-bottom: 1px solid #ccc;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+}
+
+.sub-header-wrapper{
+    width: 100vw;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.heading{
+    height: max-content;
+    /* width: 9vw; */
+    margin: 0 2vw;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+}
+
+.heading:hover{
+    border-bottom: 3px solid #f43397;
+}
+
+.heading:hover .heading-title{
+    color: #f43397;
+}
+
+.heading-title{
+    margin: 0;
+    font-weight: 400;
+}
+
+.sub-header-display{
+    position: absolute;
+    display: none;
+    top: 150px;
+    left:0;
+    right:0;
+    background-color: white;
+    padding: 0 15px;
+    margin: 0 90px;
+    border-radius: 2px;
+    border: 1px solid #ccc;
+    box-shadow: 1px 1px 3px #ccc;
+    z-index: 1;
+}
+
+.sub-header-display:hover{
+    display: flex;
+}
+
+.heading:hover .sub-header-display{
+    display: flex;
+}
+
+.sub-heading{
+    padding: 0 20px;
+}
+
+.sub-heading > p{
+    font-weight: 500;
+    color: #f43397;
+    margin-top: 15px;
+}
+
+.sub-heading-data p{
+    cursor: pointer;
+    font-weight: 400;
+    color: #656565;
+}
+
+.sub-heading-data p:hover{
+    color: black;
+}
+
+@media screen and (max-width:650px){
+    .sub-header{
+        display: none;
+    }
+}
